@@ -103,3 +103,49 @@ Jake Barosin and myself will provide example pipeline scripts that can be utiliz
 
 4. _(Optional)_ You could/should make a scope with the build step that you defined in your CBC CLI setup, and then create a policy around that for the ```validate``` commands. 
     * However, any specific policy configurations required for pipelines will be specified in the associated README.md file for those builds.
+
+
+## Basic Demo
+
+As mentioned prior, Jake Barosin and I will provide links here to seperate repositories for different build pipelines, with the applicable instructions. However, if you are eager to test if your configuration works, below is a basic example of a cbctl image scanning pipeline, and slack output.
+
+1. Navigate to your Jenkins Dashboard
+
+2. Select ```New Item``` on the upper left-hand side
+
+3. Enter a name for your project --> select ```Pipeline``` --> click 'ok' in the bottom left
+
+4. Scroll down to the ```Pipeline``` section --> copy & paste in the following --> click 'apply' & 'save'
+```
+node {
+     stage('Cbctl Image Scan') {
+         
+     sh '/var/jenkins_home/app/cbctl image scan ncomeau/demo -o json > cbctl_image_scan.json'
+     
+    }
+    stage('Send Results to Slack'){
+        try{
+            sh 'git clone https://github.com/slackapi/python-slack-sdk.git'
+         }
+         catch(exists){
+             echo 'already exists'
+         }
+        try{
+            sh 'python3 /var/jenkins_home/app/image_scan_slack.py cbctl_image_scan.json'
+            sh "python3 /var/jenkins_home/app/success.py '${env.JOB_NAME}' '${env.BUILD_NUMBER}'"
+        }
+        catch(fail){
+            sh "python3 /var/jenkins_home/app/failure.py '${env.JOB_NAME}' '${env.BUILD_NUMBER}' '${env.STAGE_NAME}'"
+        }
+    }
+}
+```
+5. Then simply click ```Build Now``` and let the magic happen! 🧙‍♂️ 🧙‍♀️
+
+6. Upon successful completeion, your pipeline should look like the below & you should see the following in the slack instance configured in the setup steps!
+
+### _Pipeline_
+![image](https://user-images.githubusercontent.com/18126247/126007812-5caab659-0e53-41d2-9894-ca6289f1b292.png)
+
+### _Slack_
+![image](https://user-images.githubusercontent.com/18126247/126007932-0cf4cc0c-234b-478a-bc9d-39a80e2c2362.png)
