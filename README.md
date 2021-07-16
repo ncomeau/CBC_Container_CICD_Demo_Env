@@ -9,9 +9,8 @@ The benefit to this approach is a simple setup of your lab environment, while al
 Jake Barosin and myself will provide example pipeline scripts that can be utilized for such demos after the necessary setup instructions below.
 
 
-## Setup Instructions
 
-### Environment Setup
+## Environment Setup
 
 1. Download the pre-configured Ubuntu OVA zip from this [repo.](https://onevmw-my.sharepoint.com/:f:/g/personal/ncomeau_vmware_com/Eni52TfGmutDvEkY7Z7Zk6MBo0GTAqxYmSQAEfbRX8L01A?e=A7t15f)
     * The download of this OVA is restircted to VMware personnel, as you are required to access it with your VMware email creds
@@ -71,9 +70,12 @@ Jake Barosin and myself will provide example pipeline scripts that can be utiliz
     * Once successful, hit ```Apply``` and then ``Save`` on the bottom of the screen!
 
 
-9. Everything should be all set for your demo env! All thats left to do is cofigure cbctl, and then import in some pipelines!
+9. Everything should be all set for your demo env! All thats left to do is cofigure cbctl, and then import in some pipelines! 🎉 🎉 🎉
 
-### CB Container Security Setup
+
+
+
+## CB Container Security Setup
 
 #### On Ubuntu Demo VM
 
@@ -91,7 +93,7 @@ Jake Barosin and myself will provide example pipeline scripts that can be utiliz
 
 2. Navigate to _\[Inventory > Kubernetes > K8s Clusters > CLI Config Tab > Add CLI\]_ 
     * Click through the install
-      * I like to name my build step _"dev"_  personally
+      * I like to name my build step _'dev'_  personally - but it can be whatever you want
     * Once you get to step 3 ```Configure/Download CLI``` **STOP** 
 
 3. Move back to Step 3 in prior section - which effectively states;
