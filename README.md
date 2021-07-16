@@ -145,7 +145,8 @@ node {
 6. Upon successful completeion, your pipeline should look like the below & you should see the following in the slack instance configured in the setup steps!
 
 ### _Pipeline_
-![image](https://user-images.githubusercontent.com/18126247/126007812-5caab659-0e53-41d2-9894-ca6289f1b292.png)
+![image](https://user-images.githubusercontent.com/18126247/126008145-23e08873-eb7e-40d0-8755-b19080461c37.png)
+
 
 ### _Slack_
 ![image](https://user-images.githubusercontent.com/18126247/126007932-0cf4cc0c-234b-478a-bc9d-39a80e2c2362.png)
