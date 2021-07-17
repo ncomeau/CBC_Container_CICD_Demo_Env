@@ -12,7 +12,7 @@ Jake Barosin and myself will provide example pipeline scripts that can be utiliz
 
 ## Environment Setup
 
-1. Download the pre-configured Ubuntu OVA zip from this [repo.](https://onevmw-my.sharepoint.com/:f:/g/personal/ncomeau_vmware_com/Eni52TfGmutDvEkY7Z7Zk6MBo0GTAqxYmSQAEfbRX8L01A?e=A7t15f)
+1. Download the pre-configured Ubuntu OVA from this [repo.](https://onevmw-my.sharepoint.com/:f:/g/personal/ncomeau_vmware_com/Eni52TfGmutDvEkY7Z7Zk6MBo0GTAqxYmSQAEfbRX8L01A?e=A7t15f)
     * The download of this OVA is restircted to VMware personnel, as you are required to access it with your VMware email creds
     * This file is quite large, so please ensure you have a stable network connection, and allot the necessary time for download
     
@@ -21,7 +21,7 @@ Jake Barosin and myself will provide example pipeline scripts that can be utiliz
       * This link does expire 14 days after initial creation, so if the link is expired, please contact me via VMware Slack DM (@ncomeau) for acccess
     * Join the ```#cbctl_jenkins_pipeline``` channel, as the helper scripts are hard coded to interact with the bots within this channel for notifications
     
-3. Once you have downloaded the OVA zip, extract it, and import into your VMware Fusion Library 
+3. Once you have downloaded the OVA and import into your VMware Fusion Library 
     * From the VMware Fusion Management page, hit the "+" icon in the upper left
     * Select ```Import```
     * Select ```Choose File...```
