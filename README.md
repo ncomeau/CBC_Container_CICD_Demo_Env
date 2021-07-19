@@ -70,7 +70,7 @@ Jake Barosin and myself will provide example pipeline scripts that can be utiliz
     * Once successful, hit ```Apply``` and then ``Save`` on the bottom of the screen!
 
 
-9. Everything should be all set for your demo env! All thats left to do is cofigure cbctl, and then import in some pipelines! 🎉 🎉 🎉
+9. Everything should be all set for your demo env! All thats left to do is configure cbctl, and then import in some pipelines! 🎉 🎉 🎉
 
 
 
