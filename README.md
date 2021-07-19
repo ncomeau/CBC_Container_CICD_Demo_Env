@@ -9,7 +9,6 @@ The benefit to this approach is a simple setup of your lab environment, while al
 Jake Barosin and myself will provide example pipeline scripts that can be utilized for such demos after the necessary setup instructions below.
 
 
-
 ## Environment Setup
 
 1. Download the pre-configured Ubuntu OVA from this [repo.](https://onevmw-my.sharepoint.com/:f:/g/personal/ncomeau_vmware_com/Eni52TfGmutDvEkY7Z7Zk6MBo0GTAqxYmSQAEfbRX8L01A?e=A7t15f)
