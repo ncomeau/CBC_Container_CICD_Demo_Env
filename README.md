@@ -7,7 +7,14 @@ This section does not deal with the pipeline generation which will be utilized a
 The benefit to this approach is a simple setup of your lab environment, while allowing for the ability to import multiple different pipeline Jenkins files - to highlight different capabilities of the tool, and perpetually be iterated on.
 
 Jake Barosin and myself will provide example pipeline scripts that can be utilized for such demos after the necessary setup instructions below.
+## Demo Repos
 
+We have put together the following repositories to leverage for testing and demo purposes - both of which are predicated on completion, and successful setup, of the demo environment, as elucidated below.
+
+1. [Cbctl Example Pipeline Jobs](https://github.com/ncomeau/cbctl_sample_pipeline_jobs)
+      * This repo is comprised of single-use Jenkinsfiles, aimed at highlighting each individual capability that cbctl provides, in a simple to utilize fashion.
+2. [CBC Container Demo](https://github.com/JaBarosin/K8sConfigs/)
+      * This repo is comprised of a full-scale demo, showcasing the multitude of capabilities which cbctl provides, and how they can seamlessly be incorporated into a CI/CD pipeline workflow in an effort to optimize operations within the build/test/deploy cycles as well as overall container hygiene, to further reduce attack surface and employ a proactive security posture.
 
 ## Environment Setup
 
