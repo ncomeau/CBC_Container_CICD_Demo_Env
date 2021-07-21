@@ -39,7 +39,7 @@ Jake Barosin and myself will provide example pipeline scripts that can be utiliz
 6. Run the script in the root dir with the following command: ```sh setup.sh```
     * This script will start your Jenkins Server instance, as well as generate a config file for microk8s (used in upcoming step)
       * This config file will be generated at path _/home/demo/Desktop/config_
-      * You might have also noticed a cleanup.sh script in that same dir - this is purely for optional use to easily prune any containers within the feline namespace, should you opt to leverage that namespace in future testing.
+         * _**NOTE:** If you restart your Ubuntu vm, and rerun this script, it will wipe your added local cb creds. Instead, after initial setup, if your demo vm restarts/is turned off simply run the command_ ```docker start jenkins-server```
 
 
 7. Navigate to your Jenkins Server
