@@ -13,7 +13,7 @@ We have put together the following repositories to leverage for testing and demo
 
 1. [Cbctl Example Pipeline Jobs](https://github.com/ncomeau/cbctl_sample_pipeline_jobs)
       * This repo is comprised of single-use Jenkinsfiles, aimed at highlighting each individual capability that cbctl provides, in a simple to utilize fashion.
-2. [CBC Container Demo](https://github.com/JaBarosin/K8sConfigs/)
+2. [CBC Container Demos](https://github.com/JaBarosin/K8sConfigs/)
       * This repo is comprised of a full-scale demo, showcasing the multitude of capabilities which cbctl provides, and how they can seamlessly be incorporated into a CI/CD pipeline workflow in an effort to optimize operations within the build/test/deploy cycles as well as overall container hygiene, to further reduce attack surface and employ a proactive security posture.
 
 ## Environment Setup
