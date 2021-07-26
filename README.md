@@ -1,4 +1,4 @@
-# CBC_Container_CICD_Demo
+# CBC_Container_CICD_Demo_Env
 
 This repository is intended to provide the building blocks for creating a demo example of CBC Container Security, specifically cbctl in the build phase, in an effort to showcase the unequivocal value that can be garnered by integrating CBC Container Security into your CI/CD pipeline.
 
